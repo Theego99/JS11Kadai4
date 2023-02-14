@@ -1,0 +1,14 @@
+.message-success {
+  background: #a6ff98;
+}
+
+.message-error {
+  color: red;
+}
+
+.required {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.7em;
+  color: red;
+}

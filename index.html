@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>会員登録フォーム</h1>
+    <form action="./complete.html">
+      <div>
+        <label>
+          <p>お名前<span class="required">必須</span></p>
+          <p><input type="text" name="name" class="require"></p>
+          <!-- <p class="message-error">入力してください</p> -->
+        </label>
+      </div>
+      <hr>
+      <div>
+        <label>
+          <p>メールアドレス<span class="required">必須</span></p>
+          <p><input type="email" name="email" class="require"></p>
+        </label>
+      </div>
+      <hr>
+      <div>
+        <label>
+          <p>パスワード（8文字以上）<span class="required">必須</span></p>
+          <p><input type="password" name="password" class="require"></p>
+        </label>
+      </div>
+      <hr>
+      <div>
+        <label>
+          <p>電話番号</p>
+          <p><input type="tel" name="tel"></p>
+        </label>
+      </div>
+      <hr>
+      <div>
+        <p>
+          <input type="submit" name="submit" value="登録" disabled>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
