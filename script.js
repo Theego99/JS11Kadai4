@@ -15,7 +15,7 @@ inputElement.forEach( inputElement => inputElement.addEventListener('change', ev
   if (!emailElement.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
     showError(emailElement, '正しいメールアドレスを入力してください');
   }
-  if (!telElement.value.match(/^(?:\d{2,4}-)?\d{2,4}-\d{4}$/) && !telElement.value.match(/^(?:\d{8,12})/)) {
+  if (!telElement.value.match(/(^(?:\d{2,4}-)?\d{2,4}-\d{4}$)||(^(?:\d{8,12}))/)) {
     showError(telElement, '正しい電話番号を入力してください');
   }
   if (passwordElement.value.length < 8) {
